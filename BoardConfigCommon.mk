@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
-# inherit from Oppo common
--include device/oppo/common/BoardConfigCommon.mk
+# inherit from IUNI common
+-include device/iuni/common/BoardConfigCommon.mk
 
 # Include path
-TARGET_SPECIFIC_HEADER_PATH := device/oppo/msm8974-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/iuni/msm8974-common/include
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -38,15 +38,15 @@ TARGET_CPU_VARIANT := krait
 #TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Assertions
-TARGET_BOARD_INFO_FILE ?= device/oppo/msm8974-common/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/iuni/msm8974-common/board-info.txt
 
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK := device/oppo/msm8974-common/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/iuni/msm8974-common/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
-TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
+TARGET_KERNEL_SOURCE := kernel/iuni/msm8974
 TARGET_KERNEL_ARCH := arm
 
 # Enable DIAG on debug builds
@@ -76,10 +76,10 @@ BLUETOOTH_HCI_USE_MCT := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # CM Hardware
-BOARD_HARDWARE_CLASS += device/oppo/msm8974-common/cmhw
+BOARD_HARDWARE_CLASS += device/iuni/msm8974-common/cmhw
 
 # Graphics
-BOARD_EGL_CFG := device/oppo/msm8974-common/configs/egl.cfg
+BOARD_EGL_CFG := device/iuni/msm8974-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_USES_C2D_COMPOSITION := true
@@ -127,7 +127,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_NO_RPC := true
 
 # GPS HAL lives here
-TARGET_GPS_HAL_PATH := device/oppo/msm8974-common/gps
+TARGET_GPS_HAL_PATH := device/iuni/msm8974-common/gps
 TARGET_PROVIDES_GPS_LOC_API := true
 
 # QCRIL
@@ -171,6 +171,6 @@ endif
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-        device/oppo/msm8974-common/sepolicy
+        device/iuni/msm8974-common/sepolicy
 
--include vendor/oppo/msm8974-common/BoardConfigVendor.mk
+-include vendor/iuni/msm8974-common/BoardConfigVendor.mk
