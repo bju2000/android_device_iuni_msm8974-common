@@ -5,7 +5,7 @@ vendor/lib/libbtnv.so
 
 # Perf
 bin/mpdecision
-vendor/lib/libqti-perfd-client.so
+#vendor/lib/libqti-perfd-client.so # not available iuni u3
 
 # ADSP
 bin/adsprpcd
@@ -40,24 +40,25 @@ etc/firmware/venus.mdt
 
 # DRM
 bin/qseecomd
-etc/permissions/com.google.widevine.software.drm.xml
-framework/com.google.widevine.software.drm.jar
+#etc/permissions/com.google.widevine.software.drm.xml # not available iuni u3 4.4.2
+#framework/com.google.widevine.software.drm.jar # not available iuni u3 4.4.2
 lib/libQSEEComAPI.so:vendor/lib/libQSEEComAPI.so
-lib/libdrmdecrypt.so
+#lib/libdrmdecrypt.so # not available on iuni u3
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
-vendor/lib/libwvdrm_L3.so
-vendor/lib/libwvm.so
-vendor/lib/libWVStreamControlAPI_L3.so
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
+
+#vendor/lib/libwvdrm_L3.so # not available on iuni u3
+#vendor/lib/libwvm.so # not available on iuni u3
+#vendor/lib/libWVStreamControlAPI_L3.so # not available on iuni u3
+#vendor/lib/drm/libdrmwvmplugin.so # not available on iuni u3
+#vendor/lib/mediadrm/libwvdrmengine.so # not available on iuni u3
 
 # GPS
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
-bin/loc_launcher
+#bin/loc_launcher # not available on iuni u3
 bin/location-mq
 bin/lowi-server
 bin/quipc_igsn
@@ -67,13 +68,13 @@ bin/xtwifi-inet-agent
 etc/permissions/com.qualcomm.location.xml
 lib/libloc_api_v02.so
 lib/libloc_ds_api.so
-vendor/bin/slim_ap_daemon
-vendor/lib/hw/activity_recognition.msm8974.so
+#vendor/bin/slim_ap_daemon # not available on iuni u3
+#vendor/lib/hw/activity_recognition.msm8974.so # not available on iuni u3
 vendor/lib/hw/flp.default.so
 vendor/lib/libalarmservice_jni.so
-vendor/lib/libasn1crt.so
-vendor/lib/libasn1crtx.so
-vendor/lib/libasn1cper.so
+#vendor/lib/libasn1crt.so # not available on iuni u3
+#vendor/lib/libasn1crtx.so # not available on iuni u3
+#vendor/lib/libasn1cper.so # not available on iuni u3
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
@@ -95,7 +96,7 @@ vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
+#vendor/lib/libbccQTI.so # not available on iuni u3
 vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libc2d30-a3xx.so
@@ -128,7 +129,7 @@ vendor/lib/libOmxWmaDec.so
 vendor/lib/libSHIMDivxDrm.so
 
 # Postprocessing
--app/PPPreference/PPPreference.apk
+#-app/PPPreference/PPPreference.apk # not available on iuni u3
 bin/mm-pp-daemon
 vendor/lib/libdisp-aba.so
 -vendor/lib/libmm-abl.so
@@ -152,8 +153,8 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
-vendor/lib/libsmemlog.so
-vendor/lib/libsystem_health_mon.so
+#vendor/lib/libsmemlog.so # not available on iuni u3
+#vendor/lib/libsystem_health_mon.so # not available on iuni u3
 
 # Radio
 -app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -167,10 +168,10 @@ etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 framework/qcnvitems.jar
 framework/qcrilhook.jar
-lib/libmdmdetect.so
+#lib/libmdmdetect.so # not available on iuni u3
 vendor/lib/libconfigdb.so
 vendor/lib/libnetmgr.so
-vendor/lib/libperipheral_client.so
+#vendor/lib/libperipheral_client.so # not available on iuni u3
 vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so
@@ -202,4 +203,4 @@ vendor/lib/liblistensoundmodel.so
 -app/QuickBoot/QuickBoot.apk
 
 # WiFi
-lib/libwcnss_qmi.so
+#lib/libwcnss_qmi.so # not available on iuni u3
