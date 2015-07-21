@@ -57,7 +57,7 @@ vendor/lib/libssd.so
 #vendor/lib/mediadrm/libwvdrmengine.so # not available on iuni u3
 
 # GPS
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
+app/com.qualcomm.location.apk
 #bin/loc_launcher # not available on iuni u3
 bin/location-mq
 bin/lowi-server
@@ -157,8 +157,8 @@ vendor/lib/libqmiservices.so
 #vendor/lib/libsystem_health_mon.so # not available on iuni u3
 
 # Radio
--app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--app/shutdownlistener/shutdownlistener.apk
+-app/qcrilmsgtunnel.apk
+-app/shutdownlistener.apk
 bin/netmgrd
 bin/qmuxd
 bin/radish
@@ -191,7 +191,7 @@ vendor/lib/libthermalioctl.so
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 -vendor/lib/libTimeService.so
--app/TimeService/TimeService.apk
+-app/TimeService.apk
 
 # Listen service
 vendor/lib/liblistenhardware.so
@@ -200,7 +200,7 @@ vendor/lib/liblistenjni.so
 vendor/lib/liblistensoundmodel.so
 
 # QuickBoot
--app/QuickBoot/QuickBoot.apk
+-app/QuickBoot.apk
 
 # WiFi
 #lib/libwcnss_qmi.so # not available on iuni u3
