@@ -1,6 +1,15 @@
 [
   {
+<<<<<<< HEAD
     "repository": "android_device_oppo_common",
     "target_path": "device/oppo/common"
+=======
+    "repository": "android_device_iuni_common",
+    "target_path": "device/iuni/common"
+  },
+  {
+    "repository": "android_kernel_iuni_msm8974",
+    "target_path": "kernel/iuni/msm8974"
+>>>>>>> b8a5e9eec8e0371269399d39a3aea4e3353a5bbf
   }
 ]

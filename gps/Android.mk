@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+<<<<<<< HEAD
 LOCAL_PATH := $(call my-dir)
+=======
+ifeq ($(BOARD_VENDOR),iuni)
+ifeq ($(TARGET_BOARD_PLATFORM),msm8974)
+>>>>>>> b8a5e9eec8e0371269399d39a3aea4e3353a5bbf
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
