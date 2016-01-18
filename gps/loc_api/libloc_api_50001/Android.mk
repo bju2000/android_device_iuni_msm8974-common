@@ -41,7 +41,11 @@ LOCAL_CFLAGS += \
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
     $(TARGET_OUT_HEADERS)/libloc_core \
+<<<<<<< HEAD:gps/loc_api/libloc_api_50001/Android.mk
     $(LOCAL_PATH)
+=======
+    device/iuni/msm8974-common/gps/libloc_api_50001
+>>>>>>> b8a5e9eec8e0371269399d39a3aea4e3353a5bbf:gps/libloc_api_50001/Android.mk
 
 LOCAL_COPY_HEADERS_TO:= libloc_eng/
 LOCAL_COPY_HEADERS:= \

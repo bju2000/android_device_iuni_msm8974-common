@@ -251,8 +251,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml
 
+<<<<<<< HEAD
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oppo/msm8974-common/msm8974-common-vendor.mk)
+=======
+# call the proprietary setup
+$(call inherit-product-if-exists, vendor/iuni/msm8974-common/msm8974-common-vendor.mk)
+>>>>>>> b8a5e9eec8e0371269399d39a3aea4e3353a5bbf
 
-# Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+# Inherit from iuni-common
+$(call inherit-product, device/iuni/common/common.mk)
